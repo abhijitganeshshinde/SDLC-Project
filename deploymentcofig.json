@@ -1,0 +1,35 @@
+{
+    "Nginx_Config_File_Location":"/etc/nginx/sites-available",
+    "Nginx_Config_File":"default",
+    "DeploymentDetails": [
+        {
+            "Repository_Name": "CICDPipelineForHTML",
+            "Deploy": [
+                {
+                    "Env": "QA",
+                    "Target_Branch":"dev",
+                    "Location": "/var/www/qa",
+                    "FolderName":"awesomeweb",
+                    "Url": "qa-awesomeweb.local",
+                    "MainFile": "index.html"
+                },
+                {
+                    "Env": "UAT",
+                    "Target_Branch":"uat",
+                    "Location": "/var/www/uat",
+                    "FolderName":"awesomeweb",
+                    "Url": "uat-awesomeweb",
+                    "MainFile": "index.html"
+                },
+                {
+                    "Env": "PROD",
+                    "Target_Branch":"prod",
+                    "Location": "/var/www/prod",
+                    "FolderName":"awesomeweb",
+                    "Url": "prod-awesomeweb",
+                    "MainFile": "index.html"
+                }
+            ]
+        }
+    ]
+}

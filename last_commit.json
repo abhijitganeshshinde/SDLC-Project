@@ -1,0 +1,17 @@
+{
+    "Repositories": [
+        {
+            "Repository_Name": "CICDPipelineForHTML",
+            "Branches": [
+                {
+                    "Branch_Name": "dev",
+                    "Commit_SHA": "893df555569291a155a20fda047cd5c0c15c27eb"
+                },
+                {
+                    "Branch_Name": "prod",
+                    "Commit_SHA": "4be4b0a99a22e3ae98d20ff0c6cd8aeff1e3ac08"
+                }
+            ]
+        }
+    ]
+}
