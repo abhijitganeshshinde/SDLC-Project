@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd /home/osboxes/Desktop/SDLC-Project
+destination_folder="$HOME/Desktop/SDLC-Project"
 
-# Run the Python program
+cd "$destination_folder"
+
 python3 checknewcommit.py
