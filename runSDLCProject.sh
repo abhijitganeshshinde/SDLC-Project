@@ -226,7 +226,7 @@ add_cron_job() {
         echo "Cron job already exists."
     else
         
-        (crontab -l ; echo "$cron_expression  $bash_script_path") | crontab -
+        (crontab -l ; echo "$cron_expression $bash_script_path") | crontab -
         echo "Cron job added successfully."
     fi
 }
